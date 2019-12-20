@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+html,body {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+input{
+	border:1px solid #b0b0b0;
+	padding:3px 5px 4px;
+	color:#979797;
+	width:190px;
+}
+address,caption,cite,code,dfn,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+/* General Demo Style */
+body{
+	font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	background: #000;
+	font-weight: 400;
+	font-size: 15px;
+	color: #aa3e03;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.ie7 body{
+	overflow:hidden;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+.containerr{
+	position: relative;
+	text-align: center;
+}
+.clr{
+	clear: both;
+}
+.containerr > header{
+	padding: 30px 30px 10px 20px;
+	margin: 0px 20px 10px 20px;
+	position: relative;
+	display: block;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-align: left;
+}
+.containerr > header h1{
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	font-size: 35px;
+	line-height: 35px;
+	position: relative;
+	font-weight: 400;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    padding: 0px 0px 5px 0px;
+}
+.containerr > header h1 span{
+
+}
+.containerr > header h2, p.info{
+	font-size: 16px;
+	font-style: italic;
+	color: #f8f8f8;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+/* Header Style */
+.codrops-top{
+	font-family: Arial, sans-serif;
+	line-height: 24px;
+	font-size: 11px;
+	width: 100%;
+	background: #000;
+	opacity: 0.9;
+	text-transform: uppercase;
+	z-index: 9999;
+	position: relative;
+
+	
+}
+.codrops-top a{
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #fff;
+	display: block;
+	float: left;
+	font-color:white;
+}
+.codrops-top a:hover{
+	color: #fff;
+}
+.codrops-top span.right{
+	float: right;
+}
+.codrops-top span.right a{
+	float: none;
+	display: inline;
+}
+
+div.codrops-demos{
+	display: block;
+	padding: 15px 0px;
+}
+
+div.codrops-demos a{
+	width: auto;
+    display: inline-block;
+	/*border: 1px solid white;*/
+	padding: 4px 10px 3px 10px;
+	font-size: 13px;
+	line-height: 18px;
+	margin: 4px 10px ;
+	font-weight: 800;
+	color:#fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #000;
+
+	
+	
+}
+div.codrops-demos a:hover{
+	background: #fff;
+	color: #000;
+}
+div.codrops-demos a:active{
+	background: #fff;
+	
+}
+div.codrops-demos a.current-demo,
+div.codrops-demos a.current-demo:hover{
+	color: #A5727D;
+	background: #fff;
+}
+/* Media Queries */
+@media screen and (max-width: 767px) {
+	.containerr > header{
+		text-align: center;
+	}
+	div.codrops-demos {
+		position: relative;
+		top: auto;
+		left: auto;
+	}
+}
+
+
+
+font-family: 'Roboto', sans-serif;
+
+body {
+  background: #D9B280;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background: #FFFFFF;
+  width: 900px;
+  height: 800px;
+  margin: 5% auto;
+  position: relative;
+}
+.container .map {
+  width: 45%;
+  float: left;
+}
+.container .contact-form {
+  width: 53%;
+  margin-left: 2%;
+  float: left;
+}
+.container .contact-form .title {
+  font-size: 2.5em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #242424;
+  margin: 5% 8%;
+}
+.container .contact-form .subtitle {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 0 4% 5% 8%;
+}
+.container .contact-form input,
+.container .contact-form textarea {
+  width: 330px;
+  padding: 3%;
+  margin: 2% 8%;
+  color: black;
+  border: 1px solid black;
+}
+.container .contact-form input::placeholder,
+.container .contact-form textarea::placeholder {
+  color: #242424;
+}
+.container .contact-form .btn-send {
+  background: black;
+  width: 180px;
+  height: 60px;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin: 2% 8%;
+  border: none;
+}
