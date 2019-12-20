@@ -66,14 +66,14 @@ a{
 	color: #333;
 	text-decoration: none;
 }
-.container{
+.containerr{
 	position: relative;
 	text-align: center;
 }
 .clr{
 	clear: both;
 }
-.container > header{
+.containerr > header{
 	padding: 30px 30px 10px 20px;
 	margin: 0px 20px 10px 20px;
 	position: relative;
@@ -81,7 +81,7 @@ a{
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     text-align: left;
 }
-.container > header h1{
+.containerr > header h1{
 	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
 	font-size: 35px;
 	line-height: 35px;
@@ -91,10 +91,10 @@ a{
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
     padding: 0px 0px 5px 0px;
 }
-.container > header h1 span{
+.containerr > header h1 span{
 
 }
-.container > header h2, p.info{
+.containerr > header h2, p.info{
 	font-size: 16px;
 	font-style: italic;
 	color: #f8f8f8;
@@ -111,6 +111,7 @@ a{
 	text-transform: uppercase;
 	z-index: 9999;
 	position: relative;
+
 	
 }
 .codrops-top a{
@@ -138,18 +139,20 @@ div.codrops-demos{
 }
 
 div.codrops-demos a{
+	width: auto;
     display: inline-block;
-	border: 1px solid #000;
-	padding: 4px 10px 3px;
+	/*border: 1px solid white;*/
+	padding: 4px 10px 3px 10px;
 	font-size: 13px;
 	line-height: 18px;
-	margin: 2px 3px;
+	margin: 4px 10px ;
 	font-weight: 800;
 	color:#fff;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	background: #000;
+
 	
 	
 }
@@ -168,7 +171,7 @@ div.codrops-demos a.current-demo:hover{
 }
 /* Media Queries */
 @media screen and (max-width: 767px) {
-	.container > header{
+	.containerr > header{
 		text-align: center;
 	}
 	div.codrops-demos {
@@ -176,4 +179,63 @@ div.codrops-demos a.current-demo:hover{
 		top: auto;
 		left: auto;
 	}
+}
+
+
+
+font-family: 'Roboto', sans-serif;
+
+body {
+  background: #D9B280;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background: #FFFFFF;
+  width: 900px;
+  height: 800px;
+  margin: 5% auto;
+  position: relative;
+}
+.container .map {
+  width: 45%;
+  float: left;
+}
+.container .contact-form {
+  width: 53%;
+  margin-left: 2%;
+  float: left;
+}
+.container .contact-form .title {
+  font-size: 2.5em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #242424;
+  margin: 5% 8%;
+}
+.container .contact-form .subtitle {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 0 4% 5% 8%;
+}
+.container .contact-form input,
+.container .contact-form textarea {
+  width: 330px;
+  padding: 3%;
+  margin: 2% 8%;
+  color: black;
+  border: 1px solid black;
+}
+.container .contact-form input::placeholder,
+.container .contact-form textarea::placeholder {
+  color: #242424;
+}
+.container .contact-form .btn-send {
+  background: black;
+  width: 180px;
+  height: 60px;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin: 2% 8%;
+  border: none;
 }
